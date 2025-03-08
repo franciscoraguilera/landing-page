@@ -27,6 +27,7 @@ const metrics = [
     label: "Distritos alcanzados",
     icon: LayoutGrid,
     color: "bg-green-50 text-green-600",
+    prefix: "+",
   },
   {
     id: 4,
