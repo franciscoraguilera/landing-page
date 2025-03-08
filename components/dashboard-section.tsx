@@ -32,7 +32,7 @@ export default function DashboardSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Dashboard Interactivo</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Explora los datos del Chequeo Digital del Paraguay a través de nuestro dashboard interactivo. Analiza
+            Explorá los datos del Chequeo Digital del Paraguay a través de nuestro dashboard interactivo. Analiza
             tendencias, compara sectores y descubre insights valiosos.
           </p>
         </motion.div>

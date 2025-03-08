@@ -9,7 +9,7 @@ import CountUp from "./CountUp"
 const metrics = [
   {
     id: 1,
-    value: 483,
+    value: 508,
     label: "Empresas encuestadas",
     icon: Users,
     color: "bg-blue-50 text-blue-600",
