@@ -74,7 +74,7 @@ function Hero() {
               rel="noopener noreferrer"
             >
               <Button
-                className="bg-[#FDB532] hover:bg-[#fda300] text-primary font-bold px-8 py-6 rounded-full text-lg transition-all duration-300 shadow-lg flex items-center gap-2"
+                className="border-2 border-[#FDB532] text-[#FDB532] bg-transparent hover:bg-[#FDB532] hover:text-white font-bold px-8 py-6 rounded-full text-lg transition-all duration-300 shadow-lg flex items-center gap-2 transform hover:scale-110"
               >
                 Realizá el chequeo
                 <ArrowUpRight className="h-5 w-5" />
