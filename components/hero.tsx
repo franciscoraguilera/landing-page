@@ -60,10 +60,10 @@ function Hero() {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="flex flex-col items-center"
         >
-          <div className="flex flex-row items-center justify-center space-x-4 mb-8">
+          <div className="flex flex-row items-center justify-center space-x-2 sm:space-x-4 mb-8 px-2 w-full max-w-full">
             <Button
               onClick={scrollToDashboard}
-              className="bg-[#FDB532] hover:bg-[#fda300] text-primary font-bold px-8 py-6 rounded-full text-lg transition-all duration-300 shadow-lg"
+              className="bg-[#FDB532] hover:bg-[#fda300] text-primary font-bold px-4 sm:px-8 py-3 sm:py-6 rounded-full text-sm sm:text-lg transition-all duration-300 shadow-lg whitespace-nowrap"
             >
               Ver datos
             </Button>
@@ -72,18 +72,19 @@ function Hero() {
               href="https://chequeodigital.mipymes.gov.py/User/Registrar#!"
               target="_blank"
               rel="noopener noreferrer"
+              className="max-w-[50%] sm:max-w-none"
             >
               <Button
-                className="border-2 border-[#FDB532] text-[#FDB532] bg-transparent hover:bg-[#FDB532] hover:text-white font-bold px-8 py-6 rounded-full text-lg transition-all duration-300 shadow-lg flex items-center gap-2 transform hover:scale-110"
+                className="border-2 border-[#FDB532] text-[#FDB532] bg-transparent hover:bg-[#FDB532] hover:text-white font-bold px-4 sm:px-8 py-3 sm:py-6 rounded-full text-sm sm:text-lg transition-all duration-300 shadow-lg flex items-center gap-1 sm:gap-2 transform hover:scale-105 whitespace-nowrap"
               >
                 Realizá el chequeo
-                <ArrowUpRight className="h-5 w-5" />
+                <ArrowUpRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
             </a>
           </div>
 
           <motion.div
-            className="text-white/90 cursor-pointer mt-4"
+            className="text-white/90 cursor-pointer mt-2"
             animate={{
               y: [0, 6, 0],
             }}
@@ -94,7 +95,7 @@ function Hero() {
             }}
             onClick={scrollToDashboard}
           >
-            <ChevronDown className="h-8 w-8" />
+            <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8" />
           </motion.div>
         </motion.div>
       </div>
