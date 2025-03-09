@@ -10,6 +10,8 @@ function DashboardSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
 
+  const isMobile = window.innerWidth <= 440
+
   return (
     <section id="dashboard" ref={ref} className="py-16 md:py-24 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -52,7 +54,7 @@ function DashboardSection() {
                 <CardContent className="p-0">
                   <div className="aspect-[16/9] md:aspect-[21/9] w-full">
                     <iframe
-                      src="https://lookerstudio.google.com/embed/reporting/7b69a928-023f-40c0-81af-c49fca824982/page/p_0deh8bzymd"
+                      src={isMobile ? "https://lookerstudio.google.com/embed/reporting/2dae2c07-611b-499a-8afb-a16bca4c3b2b/page/p_nbib8nofqd" : "https://lookerstudio.google.com/embed/reporting/7b69a928-023f-40c0-81af-c49fca824982/page/p_0deh8bzymd"}
                       className="w-full h-full"
                       allowFullScreen
                       style={{ border: 0 }}
