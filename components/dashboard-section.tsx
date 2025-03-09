@@ -75,7 +75,9 @@ export default function DashboardSection() {
 
             <div className={activeTab === "dashboard" ? "block" : "hidden"}>
               <div className="dashboard-frame">
+                {/* Desktop Dashboard */}
                 <iframe 
+                  className="hidden sm:block"
                   width="100%" 
                   height="769" 
                   src="https://lookerstudio.google.com/embed/reporting/4b188df0-8581-48c9-bfb7-92563039236a/page/p_0deh8bzymd" 
@@ -84,6 +86,18 @@ export default function DashboardSection() {
                   allowFullScreen 
                   sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin"
                   title="Dashboard Chequeo Digital"
+                ></iframe>
+                {/* Mobile Dashboard */}
+                <iframe 
+                  className="block sm:hidden"
+                  width="100%" 
+                  height="1680" 
+                  src="https://lookerstudio.google.com/embed/reporting/2dae2c07-611b-499a-8afb-a16bca4c3b2b/page/p_nbib8nofqd" 
+                  frameBorder="0" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+                  title="Dashboard Chequeo Digital Mobile"
                 ></iframe>
               </div>
             </div>
@@ -129,7 +143,7 @@ export default function DashboardSection() {
         
         .dashboard-frame {
           width: 100%;
-          height: 769px;
+          height: auto;
           margin: 0 auto;
           overflow: hidden;
           border-radius: 8px;
@@ -145,13 +159,13 @@ export default function DashboardSection() {
           }
           
           .dashboard-frame {
-            height: 600px;
+            height: 1680px;
           }
         }
         
         @media (max-width: 480px) {
           .dashboard-frame {
-            height: 500px;
+            height: 1680px;
           }
         }
       `}</style>
