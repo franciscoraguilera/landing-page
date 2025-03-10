@@ -101,19 +101,20 @@ function Hero() {
           </div>
 
           <motion.div
-            className="text-white/90 cursor-pointer mt-6 hover:text-white transition-all duration-300"
+            className="text-white/90 cursor-pointer"
             animate={{
               y: [0, 6, 0],
             }}
             transition={{
               duration: 1.5,
               repeat: Number.POSITIVE_INFINITY,
-              ease: "easeInOut",
+              repeatType: "loop",
+              ease: "easeInOut"
             }}
             onClick={scrollToDashboard}
           >
-            <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8 hover:scale-125 transition-transform duration-300" />
-          </motion.div>
+            <ChevronDown className="h-6 w-6" />
+            </motion.div>
         </motion.div>
       </div>
     </motion.section>
