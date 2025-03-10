@@ -60,31 +60,48 @@ function Hero() {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="flex flex-col items-center"
         >
-          <div className="flex flex-row items-center justify-center space-x-2 sm:space-x-4 mb-8 px-2 w-full max-w-full">
-            <Button
-              onClick={scrollToDashboard}
-              className="bg-[#FDB532] hover:bg-[#fda300] text-primary font-bold px-4 sm:px-8 py-3 sm:py-6 rounded-full text-sm sm:text-lg transition-all duration-300 shadow-lg whitespace-nowrap"
-            >
-              Ver datos
-            </Button>
-
-            <a 
-              href="https://chequeodigital.mipymes.gov.py/User/Registrar#!"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="max-w-[50%] sm:max-w-none"
+          <div className="flex flex-row items-center justify-center space-x-4 sm:space-x-6 mb-8">
+            <motion.div
+              whileHover={{ 
+                scale: 1.02,
+                y: -2,
+                transition: { duration: 0.2 }
+              }}
+              whileTap={{ scale: 0.98 }}
             >
               <Button
-                className="border-2 border-[#FDB532] text-[#FDB532] bg-transparent hover:bg-[#FDB532] hover:text-white font-bold px-4 sm:px-8 py-3 sm:py-6 rounded-full text-sm sm:text-lg transition-all duration-300 shadow-lg flex items-center gap-1 sm:gap-2 transform hover:scale-105 whitespace-nowrap"
+                onClick={scrollToDashboard}
+                className="bg-[#FDB532] hover:bg-[#fda300] text-primary font-bold px-6 py-4 sm:px-12 sm:py-8 rounded-full text-base sm:text-2xl transition-all duration-300 shadow-lg hover:shadow-[0_8px_30px_rgb(253,181,50,0.4)] whitespace-nowrap relative overflow-hidden group"
               >
-                Realizá el chequeo
-                <ArrowUpRight className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="relative z-10">Ver datos</span>
               </Button>
-            </a>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ 
+                scale: 1.02,
+                y: -2,
+                transition: { duration: 0.2 }
+              }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <a 
+                href="https://chequeodigital.mipymes.gov.py/User/Registrar#!"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black font-bold px-6 py-4 sm:px-12 sm:py-8 rounded-full text-base sm:text-2xl transition-all duration-300 shadow-lg hover:shadow-[0_8px_30px_rgba(255,255,255,0.4)] flex items-center gap-3 sm:gap-4 whitespace-nowrap group relative overflow-hidden"
+                >
+                  <span className="relative z-10">Realizá el chequeo</span>
+                  <ArrowUpRight className="h-5 w-5 sm:h-7 sm:w-7 transition-all duration-300 group-hover:rotate-45 group-hover:transform group-hover:translate-x-1 group-hover:-translate-y-1 relative z-10" />
+                </Button>
+              </a>
+            </motion.div>
           </div>
 
           <motion.div
-            className="text-white/90 cursor-pointer mt-2"
+            className="text-white/90 cursor-pointer mt-6 hover:text-white transition-all duration-300"
             animate={{
               y: [0, 6, 0],
             }}
@@ -95,7 +112,7 @@ function Hero() {
             }}
             onClick={scrollToDashboard}
           >
-            <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8" />
+            <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8 hover:scale-125 transition-transform duration-300" />
           </motion.div>
         </motion.div>
       </div>
