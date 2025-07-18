@@ -71,7 +71,7 @@ function Hero() {
             >
               <Button
                 onClick={scrollToDashboard}
-                className="bg-[#FDB532] hover:bg-[#fda300] text-primary font-bold px-6 py-4 sm:px-12 sm:py-8 rounded-full text-base sm:text-2xl transition-all duration-300 shadow-lg hover:shadow-[0_8px_30px_rgb(253,181,50,0.4)] whitespace-nowrap relative overflow-hidden group"
+                className="bg-[#FDB532] hover:bg-[#fda300] text-primary font-bold px-6 py-4 md:px-8 md:py-6 rounded-full text-base md:text-lg transition-all duration-300 shadow-lg hover:shadow-[0_8px_30px_rgb(253,181,50,0.4)] whitespace-nowrap relative overflow-hidden group"
               >
                 <span className="relative z-10">Ver datos</span>
               </Button>
@@ -91,10 +91,10 @@ function Hero() {
                 rel="noopener noreferrer"
               >
                 <Button
-                  className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black font-bold px-6 py-4 sm:px-12 sm:py-8 rounded-full text-base sm:text-2xl transition-all duration-300 shadow-lg hover:shadow-[0_8px_30px_rgba(255,255,255,0.4)] flex items-center gap-3 sm:gap-4 whitespace-nowrap group relative overflow-hidden"
+                  className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black font-bold px-6 py-4 md:px-8 md:py-6 rounded-full text-base md:text-lg transition-all duration-300 shadow-lg hover:shadow-[0_8px_30px_rgba(255,255,255,0.4)] flex items-center gap-3 md:gap-4 whitespace-nowrap group relative overflow-hidden"
                 >
                   <span className="relative z-10">Realizá el chequeo</span>
-                  <ArrowUpRight className="h-5 w-5 sm:h-7 sm:w-7 transition-all duration-300 group-hover:rotate-45 group-hover:transform group-hover:translate-x-1 group-hover:-translate-y-1 relative z-10" />
+                  <ArrowUpRight className="h-5 w-5 md:h-6 md:w-6 transition-all duration-300 group-hover:rotate-45 group-hover:transform group-hover:translate-x-1 group-hover:-translate-y-1 relative z-10" />
                 </Button>
               </a>
             </motion.div>
