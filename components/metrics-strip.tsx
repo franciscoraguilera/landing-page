@@ -9,7 +9,7 @@ import CountUp from "@/components/count-up"
 const metrics = [
   {
     id: 1,
-    value: 508,
+    value: 690,
     label: "Empresas encuestadas",
     icon: Users,
     color: "bg-blue-50 text-blue-600",
@@ -23,7 +23,7 @@ const metrics = [
   },
   {
     id: 3,
-    value: 20,
+    value: 25,
     label: "Distritos alcanzados",
     icon: LayoutGrid,
     color: "bg-green-50 text-green-600",
